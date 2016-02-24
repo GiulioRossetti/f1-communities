@@ -10,15 +10,15 @@ Instructions:
 
 To execute, the following command line has to be used from the shell:
 
-  python F1_communities.py community_file ground_truth_file [--plot output_filename] [--maxpts points_to_plot] [--title plot_title] 
+    python F1_communities.py community_file ground_truth_file [--plot output_filename] [--maxpts points_to_plot] [--title plot_title] 
 
 Where:
 
-community_file: is the file containing the community identified by a Community Discovery algorithm;
-ground_truth_file: is the file containing the ground-truth community;
-output_filename: defines the plot filename (optional, if not specified the plot will not be generated);
-points_to_plot: defines the number of points to plot (optional – if not specified all the points will be plotted);
-plot_title: defines the plot title (optional).
+    community_file: is the file containing the community identified by a Community Discovery algorithm;
+    ground_truth_file: is the file containing the ground-truth community;
+    output_filename: defines the plot filename (optional, if not specified the plot will not be generated);
+    points_to_plot: defines the number of points to plot (optional – if not specified all the points will be plotted);
+    plot_title: defines the plot title (optional).
 
 File(s) Format:
 The script expects as minimal inputs two text files containing community descriptions.
