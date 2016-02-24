@@ -21,5 +21,6 @@ Where:
     plot_title: defines the plot title (optional).
 
 File(s) Format:
+
 The script expects as minimal inputs two text files containing community descriptions.
 Each line of the input files should identify a single community as a list of node ids (the accepted separator are: tab, space, comma).
