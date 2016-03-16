@@ -1,4 +1,4 @@
-# NF1-communities
+# Normalized F1-communities
 A novel approach to evaluate community detection algorithms on ground truth
 
 Giulio Rossetti, Luca Pappalardo and Salvatore Rinzivillo
