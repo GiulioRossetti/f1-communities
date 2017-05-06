@@ -80,7 +80,12 @@ class F1_communities(object):
             for n in ns:
                 if n not in self.gt_nodes:
                     self.gt_nodes[n] = True
-                node_to_com[n] = cid
+
+                if n not in node_to_com:
+                    node_to_com[n] = [cid]
+                else:
+                    node_to_com[n].append(cid)
+
         self.gt_count = cid
 
         f = open(self.community_filename)
@@ -91,7 +96,7 @@ class F1_communities(object):
         for l in f:
             try:
                 idc += 1
-                l = l.replace("]", "").replace(" ","").split("[")[1]
+                l = l.replace("]", "").replace(" ", "").split("[")[1]
             except:
                 pass
 
@@ -104,23 +109,25 @@ class F1_communities(object):
 
                 try:
                     # community in ground truth
-                    idd = node_to_com[n]
-                    if idd not in ids:
-                        ids[idd] = 1
-                    else:
-                        ids[idd] += 1
+                    idd_list = node_to_com[n]
+                    for idd in idd_list:
+                        if idd not in ids:
+                            ids[idd] = 1
+                        else:
+                            ids[idd] += 1
                 except KeyError:
                     pass
             try:
-                # identify the maximal match ground truth community (label) and its absolute frequency (p)
-                label, p = max(ids.iteritems(), key=operator.itemgetter(1))
+                # identify the maximal match ground truth communities (label) and their absolute frequency (p)
+                maximal_match = {label: p for label, p in ids.iteritems() if p == max(ids.values())}
 
-                if label not in self.matched_gt:
-                    self.matched_gt[label] = True
+                for label, p in maximal_match.iteritems():
+                    if label not in self.matched_gt:
+                        self.matched_gt[label] = True
 
-                precision = float(p)/len(ns)
-                recall = float(p)/len(coms[label])
-                prl.append((precision, recall))
+                    precision = float(p)/len(ns)
+                    recall = float(p)/len(coms[label])
+                    prl.append((precision, recall))
             except (ZeroDivisionError, ValueError):
                 pass
 

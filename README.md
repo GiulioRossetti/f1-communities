@@ -24,3 +24,14 @@ File(s) Format:
 
 The script expects as minimal inputs two text files containing community descriptions.
 Each line of the input files should identify a single community as a list of node ids (the accepted separator are: tab, space, comma).
+
+Community file example:
+```python
+1 [0,1,2,3]
+2 [5,6,7,8]
+3 [1,6,3]
+```
+
+In order to avoid biased evaluations be sure to comply with the following rules:
+ - A community must be composed by at least 3 nodes.
+ - No nested communities: a community must not be a proper subset of another community.
