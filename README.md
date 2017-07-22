@@ -1,12 +1,15 @@
 # Normalized F1-communities
-A novel approach to evaluate community detection algorithms on ground truth
-
-Giulio Rossetti, Luca Pappalardo and Salvatore Rinzivillo
-(CompleNet 2016)
 
 Evaluating a community detection algorithm is a complex task due to the lack of a shared and universally accepted definition of community. In literature, one of the most common way to assess the performances of a community detection algorithm is to compare its output with given ground-truth communities by using computationally expensive metrics (i.e., Normalized Mutual Information). We proposed a novel approach aimed at evaluate the adherence of a community partition to the ground truth: our methodology provides more information than the state-of-the-art ones and is fast to compute on large-scale networks. By defining a classification problem on the real community label we compute an average F1-score that captures the level of approximation reached by network partitions obtained through community discovery algorithms w.r.t. ground-truth ones. Moreover, our approach allows for a visual inspection of the partition quality exploiting density scatter plots.
 
-Instructions:
+# Citation
+If you use our algorithm please cite the following works:
+
+> Rossetti, Giulio; Pappalardo, Luca; Rinzivillo, Salvatore
+> ["A novel approach to evaluate community detection algorithms on ground truth"](https://link.springer.com/chapter/10.1007%2F978-3-319-30569-1_10)
+> 7th Workshop on Complex Networks, Springer-Verlag, 2016.
+
+# Instructions:
 
 To execute, the following command line has to be used from the shell:
 
