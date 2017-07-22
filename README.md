@@ -9,7 +9,7 @@ If you use our algorithm please cite the following works:
 > ["A novel approach to evaluate community detection algorithms on ground truth"](https://link.springer.com/chapter/10.1007%2F978-3-319-30569-1_10)
 > 7th Workshop on Complex Networks, Springer-Verlag, 2016.
 
-# Instructions:
+# Instructions:
 
 To execute, the following command line has to be used from the shell:
 
@@ -23,7 +23,7 @@ Where:
     points_to_plot: defines the number of points to plot (optional – if not specified all the points will be plotted);
     plot_title: defines the plot title (optional).
 
-File(s) Format:
+## File(s) Format:
 
 The script expects as minimal inputs two text files containing community descriptions.
 Each line of the input files should identify a single community as a list of node ids (the accepted separator are: tab, space, comma).
