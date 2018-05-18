@@ -24,7 +24,7 @@ To install the nf1 package use pip
 
 The following command line has to be used from the shell:
 
-    python F1_communities.py community_file ground_truth_file [--plot output_filename] [--maxpts points_to_plot] [--title plot_title] 
+    NF1_evaluate community_file ground_truth_file [--plot output_filename] [--maxpts points_to_plot] [--title plot_title] 
 
 Where:
 
