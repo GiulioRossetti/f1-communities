@@ -1,4 +1,4 @@
-from nf1.NF1 import NF1
+from nf1 import NF1
 
 __author__ = "Giulio Rossetti"
 __contact__ = "giulio.rossetti@gmail.com"
