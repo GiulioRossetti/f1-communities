@@ -2,3 +2,4 @@ numpy
 matplotlib
 scipy
 pandas
+pytest==5.1.*
