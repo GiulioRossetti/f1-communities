@@ -12,7 +12,6 @@ class NF1TestCase(unittest.TestCase):
         res = nf.summary()
         self.assertEqual(len(res), 2)
 
-
     def test_file(self):
         coms = [(1, 2, 3), (4, 5, 6), (7, 8, 9)]
         with open("test.txt", "w") as o:
