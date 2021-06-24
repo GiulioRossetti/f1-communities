@@ -14,7 +14,7 @@ __email__ = "giulio.rossetti@gmail.com"
 
 
 setup(name='nf1',
-      version='0.0.3',
+      version='0.0.4',
       license='BSD-Clause-2',
       description='NF1: Normalized F1 score for community evaluation against ground truth',
       url='https://github.com/GiulioRossetti/f1-communities',

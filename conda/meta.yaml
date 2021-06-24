@@ -1,0 +1,32 @@
+package:
+  name: "nf1"
+  version: "0.0.4"
+
+source:
+  git_rev: v0.0.4
+  git_url: https://github.com/GiulioRossetti/f1-communities
+
+requirements:
+  host:
+    - python
+    - setuptools
+  build:
+    - python
+    - setuptools
+  run:
+    - python>=3.7
+    - numpy
+    - matplotlib
+    - scipy
+    - pandas
+
+about:
+  home: https://github.com/GiulioRossetti/f1-communities
+  license: BSD-2-Clause
+  license_familY: BSD
+  license_file: LICENSE
+  summary: "NF1 - Normalized F1 score for community evaluation against ground truth"
+
+extra:
+  recipe-maintainers:
+    - GiulioRossetti
